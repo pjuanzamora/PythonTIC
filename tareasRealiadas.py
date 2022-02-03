@@ -7,22 +7,30 @@
 #Números aleatorios 2 -- Funciones en Python range -- Bucle For
 #Ejercicios 5 - 6 - 7 - 8 del pdf Bucles
 #Listas
+#Cadenas de caracteres
 
+nombre = "   Juan   Francisco fue a juan casa"
+cont = 0
 
+nombre = nombre.strip() #Eliminar espacios en blanco del principio y final
+tam = len(nombre)   #Tamaño de la cadena
 
-vNum = []
-num = 0
+for i in nombre:   #Recorrer una cadena caracter a caracter
+    if (i=="a"):
+        cont+=1
 
-while num != -1:
-    num = int(input("Dame un numero: \n"))
-    if (num != -1):
-        vNum.append(num)
+nombre = nombre.upper() #Pasar a mayusculas
+print(nombre)
+nombre = nombre.lower() #Pasar a minusculas
+    
+#Ejercicio Buscar una palabra en un texto
+#Contar cuantas veces aparece
 
+buscar = input("Dime una palabra para buscarla: ")
+texto = "lorjuanem ipsum juan pepe siiii juan asdfasf "
+cont=0
+while (texto.find(buscar) != -1):
+    cont += 1
+    texto = texto[texto.find(buscar)+1:]
 
-print ("Los números leidos son: ", len(vNum), " y son: ", vNum)
-print ("El mayor es: ", max(vNum))
-print ("El menor es: ", min(vNum))
-
-
-
-
+print(cont)
