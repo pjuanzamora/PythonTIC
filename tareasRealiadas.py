@@ -27,7 +27,7 @@ nombre = nombre.lower() #Pasar a minusculas
 #Contar cuantas veces aparece
 
 buscar = input("Dime una palabra para buscarla: ")
-texto = "lorjuanem ipsum juan pepe siiii juan asdfasf "
+texto = "lorjuan em ipsum juan pepe siiii juan asdfasf "
 cont=0
 while (texto.find(buscar) != -1):
     cont += 1
