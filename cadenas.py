@@ -12,10 +12,8 @@ while (tam>=0):
 '''
 
 '''Ejercicio 2
-
-'''
 def imprimeConMayusculas(texto):
-   
+       
     texto = texto.lower()
     bandera=True
     for i in texto:
@@ -30,3 +28,41 @@ def imprimeConMayusculas(texto):
 
 texto = input("Dime una palabra: ")
 print(imprimeConMayusculas(texto))
+'''
+
+'''Ejercicio 3
+palabra = input ("Dime una palabra ")
+cont=0
+for i in palabra:
+    if i in ("a","e","i","o","u"):
+        cont+=1
+print("Hay",cont, "vocales")
+'''
+
+
+'''Ejercicio 4
+palabra = input ("Dime una palabra ")
+vocales = ["a","e","i","o","u"]
+
+for i in vocales:
+    for j in palabra:
+        if i==j:
+            print(i,end=" ")
+            break
+'''
+
+'''Ejercicio 5
+
+'''
+
+texto = input ("Dime una palabra ")
+
+tam = len(texto)-1
+cont=1
+i=0
+while i<tam:
+    if (texto[i] == " " and texto[i+1]!=" "):
+        cont+=1
+    i+=1
+
+print(cont)

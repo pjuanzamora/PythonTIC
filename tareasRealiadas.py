@@ -7,7 +7,8 @@
 #Números aleatorios 2 -- Funciones en Python range -- Bucle For
 #Ejercicios 5 - 6 - 7 - 8 del pdf Bucles
 #Listas
-#Cadenas de caracteres
+#Cadenas de caracteres. 
+#Ejercicios cadena de caracteres. Continue y Break
 
 nombre = "   Juan   Francisco fue a juan casa"
 cont = 0
