@@ -9,6 +9,7 @@
 #Listas
 #Cadenas de caracteres. 
 #Ejercicios cadena de caracteres. Continue y Break
+#Ficheros de texto -> Lectura y Escritura. linea.split(sep)
 
 nombre = "   Juan   Francisco fue a juan casa"
 cont = 0

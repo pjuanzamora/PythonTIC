@@ -1,0 +1,17 @@
+La razón por la que la función abrir no lee el archivo completo es que el archivo puede ser
+bastante grande con muchos gigabytes de datos.
+La instrucción open toma la misma cantidad de tiempo independientemente del tamaño del archivo.
+El bucle for en realidad hace que los datos se lean del archivo.
+
+Cuando se lee el archivo utilizando un bucle for de esta manera, Python se encarga
+de dividir los datos en el archivo en líneas separadas utilizando el carácter de nueva línea.
+Python lee cada línea asignándola a la variable line en cada iteración del bucle for.
+
+Debido a que el bucle for lee los datos una línea cada vez, puede leer y
+contar de manera eficiente las líneas en archivos
+muy grandes sin quedarse sin memoria principal para almacenar los datos.
+El programa anterior puede contar las líneas en cualquier archivo de tamaño
+usando muy poca memoria ya que cada línea se lee, se cuenta y luego se descarta.
+
+Si sabes que el archivo es relativamente pequeño en comparación con el tamaño de tu memoria principal,
+puedes leer todo el archivo en una cadena usando el método read en el identificador de archivo.
